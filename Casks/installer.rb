@@ -1,4 +1,4 @@
-# Generated with JReleaser 1.6.0 at 2023-04-29T21:18:11.76452+02:00
+# Generated with JReleaser 1.6.0 at 2023-04-29T21:18:52.540499+02:00
 cask "installer" do
   desc "A brand-new type of connection manager and remote file explorer."
   homepage "https://github.com/xpipe-io/xpipe"
