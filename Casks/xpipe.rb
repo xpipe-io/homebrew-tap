@@ -1,20 +1,24 @@
-# Generated with JReleaser 1.6.0 at 2023-05-03T17:24:54.924830831Z
 cask "xpipe" do
+  arch arm: "arm64", intel: "x86_64"
   desc "A brand-new type of connection manager and remote file explorer."
   homepage "https://github.com/xpipe-io/xpipe"
-  url "https://github.com/xpipe-io/xpipe/releases/download/0.5.39/xpipe-installer-macos-x86_64.pkg",
+  url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
       verified: "github.com"
-  version "0.5.39"
-  sha256 "a726619ceb181b19aae32e19449158e717a99113b45c8d027a77efad0cd880ff"
-  name "X-Pipe"
+  version "1.0.0"
+  # We can't verify the checksum until both arch builds are done on CI
+  sha256 :no_check
+  name "XPipe"
   auto_updates true
 
 
-  pkg "xpipe-installer-macos-x86_64.pkg"
+  pkg "xpipe-installer-macos-#{arch}.pkg"
   uninstall script:  {
-        executable: "/Applications/X-Pipe.app/Contents/Resources/scripts/uninstall.sh",
+        executable: "/Applications/XPipe.app/Contents/Resources/scripts/uninstall.sh",
         args:       [],
         sudo:       true,
       },
       pkgutil: "io.xpipe.xpipe"
+  zap trash: [
+    "~/.xpipe"
+  ]
 end
