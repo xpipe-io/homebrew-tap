@@ -1,7 +1,7 @@
 cask "Xpipe" do
   arch arm: "arm64", intel: "x86_64"
-  version "1.7.1"
-  desc "A brand-new type of connection manager and remote file explorer."
+  version "1.7.2"
+  desc "Your entire server infrastructure at your fingertips."
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
       verified: "github.com"
