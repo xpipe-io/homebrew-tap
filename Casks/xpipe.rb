@@ -1,4 +1,4 @@
-cask "Xpipe" do
+cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
   version "1.7.3"
   desc "Your entire server infrastructure at your fingertips."
@@ -7,7 +7,7 @@ cask "Xpipe" do
       verified: "github.com"
   # We can't verify the checksum until both arch builds are done on CI
   sha256 :no_check
-  name "XPipe"
+  name "xpipe"
   auto_updates true
 
   livecheck do
