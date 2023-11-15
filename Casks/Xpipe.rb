@@ -1,4 +1,4 @@
-cask "Xpipe" do
+cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
   version "1.7.4"
   desc "Your entire server infrastructure at your fingertips"
