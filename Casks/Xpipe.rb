@@ -1,6 +1,6 @@
 cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
-  version "1.7.9"
+  version "1.7.10"
   desc "Your entire server infrastructure at your fingertips"
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
