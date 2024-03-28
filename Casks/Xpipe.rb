@@ -1,6 +1,6 @@
 cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
-  version "8.5"
+  version "8.6"
   desc "Your entire server infrastructure at your fingertips"
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
@@ -15,6 +15,7 @@ cask "xpipe" do
     strategy :github_latest
   end
 
+  depends_on "util-linux"
 
   pkg "xpipe-installer-macos-#{arch}.pkg"
   uninstall script:  {
