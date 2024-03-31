@@ -15,7 +15,7 @@ cask "xpipe" do
     strategy :github_latest
   end
 
-  depends_on "util-linux"
+  depends_on formula: "util-linux"
 
   pkg "xpipe-installer-macos-#{arch}.pkg"
   uninstall script:  {
