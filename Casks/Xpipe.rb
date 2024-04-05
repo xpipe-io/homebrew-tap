@@ -15,8 +15,6 @@ cask "xpipe" do
     strategy :github_latest
   end
 
-  depends_on "util-linux"
-
   pkg "xpipe-installer-macos-#{arch}.pkg"
   uninstall script:  {
         executable: "/Applications/XPipe.app/Contents/Resources/scripts/uninstall.sh",
