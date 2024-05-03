@@ -1,11 +1,10 @@
 cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
-  version "9.0.1"
+  version "9.1"
   desc "Your entire server infrastructure at your fingertips"
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
       verified: "github.com"
-  # We can't verify the checksum until both arch builds are done on CI
   sha256 :no_check
   name "XPipe"
   auto_updates true
