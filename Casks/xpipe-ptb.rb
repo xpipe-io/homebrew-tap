@@ -5,7 +5,7 @@ cask "xpipe-ptb" do
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe-ptb/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
       verified: "github.com"
-  sha256 arm: "77f6b42923b2cb9107613599b3e8f2c1f606decf539c3c21b1e4c7d0bd67bed2", intel: ""
+  sha256 arm: "d419252ebf1d279bad80b8bb25d513325c28986989004873129f9504e6652893", intel: "a0ba5c658a9bc6542ce3194ff24051a40bd75788d4b9b997381d774376dd56f7"
   name "XPipe PTB"
   auto_updates true
 
