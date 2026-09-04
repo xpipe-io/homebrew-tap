@@ -1,11 +1,11 @@
 cask "xpipe" do
   arch arm: "arm64", intel: "x86_64"
-  version "23.99.2"
+  version "24.0.3"
   desc "Your entire server infrastructure at your fingertips"
   homepage "https://xpipe.io"
   url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
       verified: "github.com"
-  sha256 arm: "5c64a99b7a26f9e7421ab1382d07e7ff9f302163318361301e4a78582b3d1c56", intel: "84ffad3cf19694ff3911674aaa9c981c1f43fbaadaaea37a57ef0603504f0e4e"
+  sha256 arm: "6731264fdd2b571ab5e633176595e5a624e74164cf7cadc06a7c3852d98c813e", intel: "38b93a6927a82db4a7a0cc6785751ee9a79623fb6ed8a96f501f1e75b6a69d29"
   name "XPipe"
   auto_updates true
 
