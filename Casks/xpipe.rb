@@ -3,8 +3,7 @@ cask "xpipe" do
   version "24.1.1"
   desc "Your entire server infrastructure at your fingertips"
   homepage "https://xpipe.io"
-  url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg",
-      verified: "github.com"
+  url "https://github.com/xpipe-io/xpipe/releases/download/#{version}/xpipe-installer-macos-#{arch}.pkg"
   sha256 arm: "de67a89dfafbb2f1986aeaa3d0c46d2763e5c1b3a6c6eeb4a3bec718cd19fa83", intel: "fd4112c106dfb4a1dde764c3a3930885bd399f88f0a233d80bd03f8ed35a4b72"
   name "XPipe"
   auto_updates true
